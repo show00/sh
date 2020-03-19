@@ -4,11 +4,11 @@ yum -y install epel-release
 yum -y update
 yum -y install sshpass ncdu screen htop pdsh wget pssh fpart  nano lrzsz
 
-cat <<EOF >/etc/yum.repos.d/resilio-sync.repo
+cat <<"EOF" >/etc/yum.repos.d/resilio-sync.repo
 
 [resilio-sync]
 name=Resilio Sync
-baseurl=http://linux-packages.resilio.com/resilio-sync/rpm/'$basearch'
+baseurl=http://linux-packages.resilio.com/resilio-sync/rpm/$basearch
 enabled=1
 gpgcheck=1
 
