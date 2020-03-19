@@ -2,7 +2,7 @@
 
 yum -y install epel-release
 yum -y update
-yum -y install sshpass ncdu screen htop pdsh wget pssh fpart  nano lrzsz
+yum -y install sshpass ncdu screen htop pdsh wget nano lrzsz
 
 cat <<"EOF" >/etc/yum.repos.d/resilio-sync.repo
 
